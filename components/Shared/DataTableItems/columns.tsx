@@ -1,10 +1,11 @@
 "use client"
 
 import { ColumnDef } from "@tanstack/react-table"
-import { Character, DataTableItemsProps } from "./DataTableItems.types"
+
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-export const columns: ColumnDef<Character>[]=[
+import { CharacterType } from "@/lib/types/CharacterType";
+export const columns: ColumnDef<CharacterType>[]=[
     {
         accessorKey: "image",
         header: "Avatar",

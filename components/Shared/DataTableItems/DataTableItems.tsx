@@ -1,6 +1,6 @@
 import { DataTable } from "./data-table";
 import { columns } from "./columns";
-import { DataTableItemsProps, Character } from './DataTableItems.types';
+import { DataTableItemsProps} from './DataTableItems.types';
 
 export default function DataTableItems(props: DataTableItemsProps){
     const {elements}=props
