@@ -5,7 +5,9 @@ import { ColumnDef } from "@tanstack/react-table"
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { CharacterType } from "@/lib/types/CharacterType";
+import { ActionCell } from "./ActionCell";
 export const columns: ColumnDef<CharacterType>[]=[
+    
     {
         accessorKey: "image",
         header: "Avatar",
@@ -35,19 +37,6 @@ export const columns: ColumnDef<CharacterType>[]=[
     {
         id: "actions",
         header: "Actions",
-        cell: ({row})=>{
-            const router = useRouter()
-            const character = row.original
-            return (
-                <Button
-                    variant="outline"
-                    size="sm"
-                    
-                    onClick={()=> router.push(`/profile/${character.id}`)}
-                >
-                    See profile
-                </Button>
-            )
-        }
+        cell: ({row})=><ActionCell character={row.original}/>
     }
 ]
