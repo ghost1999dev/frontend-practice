@@ -10,8 +10,8 @@ interface ProfilePageProps {
     id: string;
   };
 }
-export default function ProfilePage(props: ProfilePageProps) {
-  const { id} = props.params;
+export default function ProfilePage({params}:ProfilePageProps) {
+  const { id} = params
   const router = useRouter()
   const [character, setCharacter]= useState<CharacterType | null>(null)
   const goBackHome =()=>{
