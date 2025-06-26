@@ -6,3 +6,9 @@ export type CharacterType={
     species:string,
     gender:string
 }
+export type ApiResponse ={
+    results: CharacterType[]
+    info:{
+        pages: number
+    }
+}
