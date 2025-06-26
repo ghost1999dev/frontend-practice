@@ -1,0 +1,52 @@
+"use client"
+
+import { ColumnDef } from "@tanstack/react-table"
+import { Character, DataTableItemsProps } from "./DataTableItems.types"
+import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
+export const columns: ColumnDef<Character>[]=[
+    {
+        accessorKey: "image",
+        header: "Avatar",
+        cell: ({ row }) => {
+            return(
+                <img
+                    src={row.original.image}
+                    alt={row.original.name}
+                    className="h-12 w-12 rounded-full object-cover border"
+                />
+            )
+        },
+    },
+    
+    {
+        accessorKey: "name",
+        header: "Name"
+    },
+    {
+        accessorKey: "status",
+        header: "Status"
+    },
+    {
+        accessorKey: "species",
+        header: "Species"
+    },
+    {
+        id: "actions",
+        header: "Actions",
+        cell: ({row})=>{
+            const router = useRouter()
+            const character = row.original
+            return (
+                <Button
+                    variant="outline"
+                    size="sm"
+                    
+                    onClick={()=> router.push(`/profile/${character.id}`)}
+                >
+                    See profile
+                </Button>
+            )
+        }
+    }
+]
