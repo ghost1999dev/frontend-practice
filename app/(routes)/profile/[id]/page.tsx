@@ -2,17 +2,12 @@
 "use client"
 import { Button } from "@/components/ui/button";
 import { CharacterType } from "@/lib/types/CharacterType";
-import { useRouter } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import {  useState,useEffect} from "react";
-
-interface ProfilePageProps {
-  params: {
-    id: string;
-  };
-}
-export default function ProfilePage({params}:ProfilePageProps) {
-  const { id} = params
+export default function ProfilePage() {
+  const params = useParams()
   const router = useRouter()
+  const id = params.id as string
   const [character, setCharacter]= useState<CharacterType | null>(null)
   const goBackHome =()=>{
     router.back()
