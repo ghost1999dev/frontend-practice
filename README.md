@@ -26,6 +26,6 @@ Puedes ver la app funcionando en el siguiente enlace
 - **TypeScript** – Tipado estático para una base de código más robusta.
 - **Tailwind CSS** – Utilidades para estilizar rápidamente.
 - **Rick and Morty API** – API REST para obtener datos de personajes.
-- **Shacdn** – Uso de componentes como DataTables
+- **Shadcdn** – Uso de componentes como DataTables
 
 ---
