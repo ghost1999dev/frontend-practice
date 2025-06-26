@@ -1,9 +1,5 @@
 "use client"
-
 import { ColumnDef } from "@tanstack/react-table"
-
-import { useRouter } from "next/navigation";
-import { Button } from "@/components/ui/button";
 import { CharacterType } from "@/lib/types/CharacterType";
 import { ActionCell } from "./ActionCell";
 export const columns: ColumnDef<CharacterType>[]=[
