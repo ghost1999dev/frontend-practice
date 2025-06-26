@@ -1,4 +1,4 @@
-import DataTableItems from "@/components/Shared/DataTableItems/DataTableItems";
+
 import React from "react";
 
 export default function LayoutRoutes({
