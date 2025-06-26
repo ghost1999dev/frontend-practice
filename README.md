@@ -19,6 +19,9 @@ La aplicación aplica buenas prácticas modernas como componentes cliente/servid
 Puedes ver la app funcionando en el siguiente enlace
 [https://frontend-practice-h4pu.vercel.app/](https://frontend-practice-h4pu.vercel.app/)
 
+## Nota
+  Deje la logica que habia realizado primero con el DataTable de Shadcdn para que puedan ver el flujo de como lo utilice
+
 ## 🚀 Tecnologías Utilizadas
 
 - **Next.js 15** – Framework de React con soporte para rendering híbrido.
