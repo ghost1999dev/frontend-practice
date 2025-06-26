@@ -13,3 +13,19 @@
 La aplicación aplica buenas prácticas modernas como componentes cliente/servidor, manejo de rutas dinámicas (`app router`), tipado con TypeScript y estilos con Tailwind CSS.
 
 ---
+
+## Demo en linea
+
+Puedes ver la app funcionando en el siguiente enlace
+[https://frontend-practice-h4pu.vercel.app/](https://frontend-practice-h4pu.vercel.app/)
+
+## 🚀 Tecnologías Utilizadas
+
+- **Next.js 15** – Framework de React con soporte para rendering híbrido.
+- **React 19** – Librería para la construcción de interfaces modernas.
+- **TypeScript** – Tipado estático para una base de código más robusta.
+- **Tailwind CSS** – Utilidades para estilizar rápidamente.
+- **Rick and Morty API** – API REST para obtener datos de personajes.
+- **Shacdn** – Uso de componentes como DataTables
+
+---
